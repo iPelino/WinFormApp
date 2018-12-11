@@ -16,5 +16,22 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClick_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("You just clicked a button");
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var firstName = textBoxFirstName.Text;
+            MessageBox.Show(firstName == "" ? "Please Enter your first name" : firstName);
+        }
     }
 }
